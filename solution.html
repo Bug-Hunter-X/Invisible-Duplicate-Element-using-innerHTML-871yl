@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct way to add a new element using DOM methods
+    const newDiv = document.createElement("div");
+    newDiv.id = "newDiv"; // Use a different ID for the new element
+    newDiv.textContent = "This div is added correctly.";
+    document.body.appendChild(newDiv);
+  </script>
+</body>
+</html>
